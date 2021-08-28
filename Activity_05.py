@@ -1,9 +1,7 @@
 input_line=input()
 number_string_list=input_line.split()
 sum=0
-n=len(number_string_list)
-i=n-1
-while(i>=0):
-    sum=sum+int(number_string_list[i])
-    i=i-1
+for i in number_string_list:
+    sum=sum+int(i)
 print(sum)
+
